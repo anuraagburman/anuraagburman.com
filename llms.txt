@@ -1,0 +1,41 @@
+# Anuraag Burman — Product Manager Portfolio
+
+> Senior Product Manager at Delivery Hero / Foodpanda, Singapore. 10+ years building subscription products, fintech systems, and AI-powered tools across 15+ APAC and EU markets.
+
+## About
+Anuraag Burman is a product leader and Super IC on the Subscriptions team at Delivery Hero / Foodpanda. He owns product strategy, execution, and cross-functional delivery for subscriptions across 15+ markets. His career spans architecture, e-commerce co-founding ($12M revenue), fintech, coliving, and food delivery at scale.
+
+## Key Achievements
+- $150M+ GMV subscription P&L ownership
+- 36% churn reduction through pricing and benefit optimization
+- Conversion uplift from 8% to 38% via 1-click enrollment and free trials
+- 12% support cost reduction via AI knowledge base (Vertex AI)
+- Wallet strategy: 3% to 27% order share, $30M GMV in 2 months
+- EUR 60M cost savings through incentive audience targeting
+- 99.8% payment success rate
+- Partner integrations: Spotify, TADA, LineGo, Bolt
+
+## AI Building Experience
+- PortfolioIQ: Full-stack AI stock intelligence app (Next.js, Supabase, Claude API, Vercel)
+- TR Knowledge Base: Enterprise RAG pipeline (Vertex AI Search, Auth0, Google Cloud) — shipped to production, serves all markets
+- Waypoint.ai: Component-based frontend using 21st.dev
+- Quiz App: No-code AI tool evaluation (Lovable, Replit)
+
+## Technical Skills
+Prompt engineering, Claude, ChatGPT, Gemini, Claude Code, Vertex AI Search, RAG pipelines, Next.js, React, Tailwind CSS, Supabase, Upstash Redis, Vercel, Google Cloud, Auth0, Figma + MCP, API design
+
+## Career History
+- Delivery Hero / Foodpanda — Super IC, Subscriptions (Oct 2021–present)
+- Hmlet (now Habyt) — Head of Product (Feb 2020–Aug 2021)
+- Moneysmart — Senior Product Manager (Jan 2019–Jan 2020)
+- b-Easy — Co-founder & Head of Product (Jun 2016–Dec 2019)
+- Medboxapp — Co-founder (Jul 2013–Jul 2015)
+
+## Education
+- Purdue University, MS in Global Entrepreneurship & Innovation (2015–2016)
+- NIT Trichy, B.Tech, Architecture (2009–2014)
+
+## Contact
+- Email: anuraagburman02@gmail.com
+- LinkedIn: https://www.linkedin.com/in/anuraag-burman
+- Location: Singapore
