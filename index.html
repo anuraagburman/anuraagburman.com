@@ -360,16 +360,19 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
   .cost-table th,.cost-table td{padding:6px 6px}
   .why-grid{grid-template-columns:1fr}
   .build-step{gap:8px}
+  .expand-trigger{align-items:flex-start;font-size:11px;text-align:left;line-height:1.5}
+  .expand-trigger .arrow{margin-top:2px;flex-shrink:0}
 }
 @media(max-width:380px){
   .nav-inner{height:48px}
   .nav-name{font-size:14px}
-  .nav-links{gap:8px}
-  .nav-links a{font-size:10px}
+  .nav-links{gap:6px}
+  .nav-links a{font-size:9.5px;letter-spacing:0.01em}
   .hero h1{font-size:24px}
   .metric-grid{grid-template-columns:1fr}
   .pc-header{flex-direction:column;gap:6px}
   .role-header{flex-direction:column;gap:6px}
+  .expand-trigger{font-size:10.5px}
 }
 </style>
 </head>
@@ -615,9 +618,9 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
       <div class="pc-name">Personal Assistant Toolkit</div>
       <div class="pc-badge shipped">LIVE · OPEN SOURCE · MIT</div>
     </div>
-    <div class="pc-summary"><strong>The question:</strong> What if Claude already knew everything about your day without you having to tell it anything? Every morning starts with opening 6 to 8 apps just to understand what the day looks like. Calendar, tasks, reminders, email, weather. Each one is a context switch, and by the time you have the full picture, half an hour is gone.
+    <div class="pc-summary"><strong>The question:</strong> AI assistants are powerful but context-blind. They have no access to your calendar, tasks, email, or reminders unless you manually paste everything in. Every briefing is manual, every query is stateless. Could you build the infrastructure layer that makes AI genuinely useful for daily workflows, not just conversation?
 
-<br><br><strong>What I learned:</strong> The most important decision wasn't technical. It was the privacy architecture. All personal data stays on the user's machine. Nothing routes through a third-party server. That constraint shaped every tool choice (local MCP server, not cloud-hosted), every integration decision (metadata-only for Gmail, no email bodies), and every de-scoping call (Apple Notes and WhatsApp excluded because the privacy risk outweighed the value). Building the security layer before writing a single tool prevented the kind of retrofit that kills projects. And discovering that AppleScript silently hangs on large reminder lists, then pivoting to Swift/EventKit in the same session, reinforced something applicable to any product role: test assumptions with real data early, not after the demo.</div>
+<br><br><strong>What I learned:</strong> This was the first project where the output wasn't an app or a website. It was an MCP server: the protocol layer that lets AI tools connect to real data sources. Building it meant writing tool definitions that Claude Desktop calls at runtime, designing OAuth2 authentication flows for multi-account Google access, handling macOS system APIs (Swift/EventKit) when the obvious approach (AppleScript) silently failed, and implementing input validation and rate limiting before any tool was written. The architectural thinking here is different from building a frontend or an API. It's about designing the contract between an AI model and the systems it needs to reason about. That understanding of how AI infrastructure works at the protocol level is increasingly relevant to how products are built.</div>
 
     <div class="detail-grid">
       <div class="detail-cell"><div class="dc-label">Tools built</div><div class="dc-val">7 MCP tools</div><div class="dc-note">Weather, Calendar, Tasks, Email, Reminders, Health check, Task completion</div></div>
@@ -1053,7 +1056,7 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
       <div style="width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;background:var(--acc-light);color:var(--acc-dark)">&#9670;</div>
       <div>
         <div style="font-size:15px;font-weight:500;margin-bottom:4px">AI as a genuine capability, not a talking point.</div>
-        <div style="font-size:14.5px;color:var(--ink2);line-height:1.65">Five projects built, four in production. An enterprise RAG pipeline that started in one market and now serves support teams globally. A full-stack SaaS deployed over a weekend. This builds real intuition about what AI can and can't do for a product, and that intuition matters in every roadmap and prioritisation conversation.</div>
+        <div style="font-size:14.5px;color:var(--ink2);line-height:1.65">Six projects built, five in production. An enterprise RAG pipeline serving support teams globally. A full-stack SaaS deployed over a weekend. An open-source MCP server that connects AI to personal productivity infrastructure. The progression from using AI to building the systems AI runs on creates a different kind of product intuition, one that matters in roadmap conversations, architecture reviews, and decisions about where AI creates real value versus where it's just a feature checkbox.</div>
       </div>
     </div>
 
@@ -1061,7 +1064,7 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
       <div style="width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;background:var(--violet-light);color:var(--violet)">&#9674;</div>
       <div>
         <div style="font-size:15px;font-weight:500;margin-bottom:4px">Velocity that comes from clarity.</div>
-        <div style="font-size:14.5px;color:var(--ink2);line-height:1.65">PortfolioIQ went from concept to deployed product. The TR Knowledge Base went from a Turkey launch need to a tool used across the organisation. That comes from clear specs, right tools, and knowing which decisions to make now versus defer. In teams, it shows up as crisp PRDs, unambiguous success criteria, and fewer re-alignment cycles.</div>
+        <div style="font-size:14.5px;color:var(--ink2);line-height:1.65">PortfolioIQ went from concept to deployed product. The TR Knowledge Base went from a Turkey launch need to a tool used across the organisation. The Personal Assistant Toolkit went from a daily frustration to an open-source MCP server used every morning. That comes from clear specs, right tools, and knowing which decisions to make now versus defer. In teams, it shows up as crisp PRDs, unambiguous success criteria, and fewer re-alignment cycles.</div>
       </div>
     </div>
   </div>
@@ -1078,7 +1081,7 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
     <h3>Say hello.</h3>
     <p>I'm always happy to connect with people thinking about product strategy, AI-native development, or building at the intersection of product and engineering. If something here resonated, I'd welcome a conversation.</p>
     <div class="contact-row">
-      <a href="/cdn-cgi/l/email-protection#5a3b342f283b3b3d382f28373b346a681a3d373b333674393537" class="contact-btn primary"><span class="__cf_email__" data-cfemail="25444b505744444247505748444b1517654248444c490b464a48">[email&#160;protected]</span></a>
+      <a href="mailto:anuraagburman02@gmail.com" class="contact-btn primary">anuraagburman02@gmail.com</a>
       <a href="https://www.linkedin.com/in/anuraag-burman" target="_blank" rel="noopener" class="contact-btn secondary">LinkedIn</a>
       <a href="tel:+6582494979" class="contact-btn secondary">+65 8249 4979</a>
     </div>
