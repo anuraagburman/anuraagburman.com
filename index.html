@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#1D9E75">
 
 <!-- AI Search Meta Tags -->
-<meta name="ai-content-description" content="Anuraag Burman is a Senior Product Manager at Delivery Hero / Foodpanda in Singapore with over 10 years of experience building subscription products, fintech systems, and AI-powered tools across 15+ APAC and EU markets. His portfolio includes $150M+ GMV impact, 36% churn reduction, and hands-on AI projects like PortfolioIQ (a full-stack AI stock intelligence platform) and an enterprise RAG knowledge base that reduced support costs by 12%.">
+<meta name="ai-content-description" content="Anuraag Burman is a Senior Product Manager at Delivery Hero / Foodpanda in Singapore with over 10 years of experience building subscription products, fintech systems, and AI-powered tools across 15+ APAC and EU markets. His portfolio includes $150M+ GMV impact, 36% churn reduction, and hands-on AI projects like PortfolioIQ (a full-stack AI stock intelligence platform), a Personal Assistant Toolkit (open-source MCP server for Claude Desktop), and an enterprise RAG knowledge base that reduced support costs by 12%.">
 <meta name="citation_author" content="Anuraag Burman">
 <link rel="me" href="https://www.linkedin.com/in/anuraag-burman">
 
@@ -99,11 +99,23 @@
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Projects by Anuraag Burman",
-  "numberOfItems": 4,
+  "numberOfItems": 5,
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "Personal Assistant Toolkit",
+        "description": "Open-source MCP server connecting Claude Desktop to personal productivity tools: Google Calendar, Tasks, Gmail, Weather, and Apple Reminders. Local-first architecture where all data stays on device.",
+        "url": "https://github.com/anuraagburman/personal-assistant-toolkit",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "macOS"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
       "item": {
         "@type": "SoftwareApplication",
         "name": "PortfolioIQ",
@@ -115,7 +127,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 2,
+      "position": 3,
       "item": {
         "@type": "SoftwareApplication",
         "name": "TR Knowledge Base",
@@ -125,7 +137,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 3,
+      "position": 4,
       "item": {
         "@type": "SoftwareApplication",
         "name": "Waypoint.ai",
@@ -137,7 +149,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 4,
+      "position": 5,
       "item": {
         "@type": "SoftwareApplication",
         "name": "Quiz App",
@@ -256,7 +268,7 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 .arch-chip.infra{border-color:rgba(138,138,138,0.25);color:var(--ink3)}
 .arch-chip.design{border-color:rgba(212,83,126,0.25);color:#D4537E}
 
-.expand-trigger{display:flex;align-items:flex-start;gap:6px;font-family:var(--f-mono);font-size:12px;color:var(--acc);background:none;border:none;cursor:pointer;padding:10px 0;letter-spacing:0.03em;transition:opacity 0.2s;text-align:left}
+.expand-trigger{display:flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:12px;color:var(--acc);background:none;border:none;cursor:pointer;padding:10px 0;letter-spacing:0.03em;transition:opacity 0.2s}
 .expand-trigger:hover{opacity:0.7}
 .expand-trigger .arrow{transition:transform 0.3s;display:inline-block}
 .expand-trigger.open .arrow{transform:rotate(180deg)}
@@ -301,7 +313,7 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 
 /* Closing section */
 .closing-card{text-align:center;background:var(--surf);border:1px solid var(--bdr);border-radius:12px;padding:2rem;text-align:center;margin:8px 0}
-.closing-card h2,.closing-card h3{font-family:var(--f-display);font-size:24px;font-weight:400;margin-bottom:8px}
+.closing-card h3{font-family:var(--f-display);font-size:24px;font-weight:400;margin-bottom:8px}
 .closing-card p{font-size:16px;color:var(--ink2);line-height:1.7;margin-bottom:16px;max-width:500px;margin-left:auto;margin-right:auto}
 .contact-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
 .contact-btn{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-body);font-size:14px;font-weight:500;padding:10px 20px;border-radius:8px;text-decoration:none;transition:all 0.2s}
@@ -321,11 +333,9 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
   .why-grid{grid-template-columns:1fr}
 }
 @media(max-width:640px){
-  .nav{padding:0 0.75rem}
-  .nav-links{gap:10px}
+  .nav{padding:0 1rem}
+  .nav-links{gap:12px}
   .nav-links a{font-size:11px}
-  .nav-name{font-size:15px}
-  .expand-trigger{font-size:11px}
   .hero h1{font-size:28px}
   .hero-sub{font-size:15px}
   .hero{padding:2.5rem 0 2rem}
@@ -343,7 +353,7 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
   .link-btn{font-size:11px;padding:6px 12px}
   .contact-row{flex-direction:column;align-items:center}
   .closing-card{padding:1.5rem}
-  .closing-card h2,.closing-card h3{font-size:20px}
+  .closing-card h3{font-size:20px}
   .ds-row{gap:6px}
   .ds-swatch{width:40px;height:40px}
   .cost-table{font-size:12px}
@@ -351,12 +361,11 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
   .why-grid{grid-template-columns:1fr}
   .build-step{gap:8px}
 }
-@media(max-width:420px){
+@media(max-width:380px){
   .nav-inner{height:48px}
   .nav-name{font-size:14px}
   .nav-links{gap:8px}
-  .nav-links a{font-size:10px;letter-spacing:0}
-  .expand-trigger{font-size:10.5px}
+  .nav-links a{font-size:10px}
   .hero h1{font-size:24px}
   .metric-grid{grid-template-columns:1fr}
   .pc-header{flex-direction:column;gap:6px}
@@ -379,11 +388,9 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 </div>
 </nav>
 
-<main role="main" aria-label="Main content">
-
 <!-- HERO -->
 <div class="container">
-<section class="hero" id="about" aria-label="Hero introduction">
+<section class="hero" id="about">
   <div class="hero-tag">Product management portfolio</div>
   <h1>I build products that ship.<br>Some of them, I also code.</h1>
   <p class="hero-sub">I'm Anuraag Burman, a product leader based in Singapore with 10+ years of experience in product strategy, execution, and vision. Currently a Super IC at Delivery Hero / Foodpanda, where I've worked across growth, fintech, wallets, subscriptions, and incentives. I'm also deeply curious about AI. Not as a buzzword, but as a genuine shift in how we build and operate. So I've been learning, building, and experiencing that shift firsthand.</p>
@@ -394,7 +401,7 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 
 <!-- POSITIONING -->
 <div class="container">
-<section class="section" id="positioning" aria-label="Professional positioning">
+<section class="section">
   <div class="sec-tag">The short version</div>
   <div class="manifesto">
     <p>Most PMs talk about AI. I build with it. I've shipped a RAG-powered knowledge base on GCP that cut support costs by 12%. I've taken a stock intelligence app from "what if" to deployed MVP over a weekend using Claude Code. I know the difference between Sonnet and Haiku, and more importantly, I know when to use which one and why.</p>
@@ -407,9 +414,9 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 
 <!-- CURRENT ROLE -->
 <div class="container">
-<section class="section" id="role" aria-label="Work experience">
+<section class="section" id="role">
   <div class="sec-tag">Where I work</div>
-  <h2 class="sec-title">Delivery Hero / Foodpanda</h2>
+  <div class="sec-title">Delivery Hero / Foodpanda</div>
   <div class="sec-body">Super IC on the Subscriptions team. I own product strategy, execution, and cross-functional delivery for subscriptions across 15+ markets, working across engineering, design, operations, data, and regional teams to align on outcomes that move the business.</div>
 
   <div class="role-card">
@@ -497,9 +504,9 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 
 <!-- AI PROFICIENCY TIMELINE -->
 <div class="container">
-<section class="section" id="timeline" aria-label="AI proficiency timeline">
+<section class="section" id="timeline">
   <div class="sec-tag">AI proficiency timeline</div>
-  <h2 class="sec-title">How I got here</h2>
+  <div class="sec-title">How I got here</div>
   <div class="sec-body">This wasn't a single decision. It was a series of small ones, each pulling me deeper into the AI ecosystem and expanding what I could build on my own.</div>
 
   <div class="timeline">
@@ -558,9 +565,9 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
       </div>
     </div>
 
-    <div class="tl-node active">
+    <div class="tl-node">
       <div class="tl-dot"></div>
-      <div class="tl-date">March 2026 to present</div>
+      <div class="tl-date">March 2026</div>
       <div class="tl-title">Full-stack: databases, APIs, caching, deployment</div>
       <div class="tl-desc">Built <a href="https://portfolioiq-orcin.vercel.app/" target="_blank" rel="noopener" style="color:var(--acc)">PortfolioIQ</a> end-to-end using Claude Code. Set up Supabase (Postgres + auth + storage), Upstash Redis for caching, Finnhub and FRED for market data, Vercel for deployment with CI/CD. Also went through the full design workflow: Google Stitch for initial generation, then Figma Pro with MCP for production design connected directly to Claude. This is where all the previous layers came together.</div>
       <div class="tl-skills">
@@ -573,6 +580,22 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
       </div>
     </div>
 
+    <div class="tl-node active">
+      <div class="tl-dot"></div>
+      <div class="tl-date">March 2026 to present</div>
+      <div class="tl-title">MCP infrastructure: building the tools AI uses</div>
+      <div class="tl-desc">Built a <a href="https://github.com/anuraagburman/personal-assistant-toolkit" target="_blank" rel="noopener" style="color:var(--acc)">local MCP server</a> that connects Claude Desktop to personal productivity tools: Google Calendar, Tasks, Gmail, Weather, and Apple Reminders. This shifted from using AI tools to building the infrastructure AI tools run on. Wrote TypeScript, Swift (EventKit), and OAuth2 flows. Designed a security-first architecture where all data stays local. Open-sourced under MIT license for anyone to use and build on.</div>
+      <div class="tl-skills">
+        <span class="pill">MCP server</span>
+        <span class="pill">TypeScript</span>
+        <span class="pill">Swift / EventKit</span>
+        <span class="pill">OAuth2</span>
+        <span class="pill">Google APIs</span>
+        <span class="pill">Claude Desktop</span>
+        <span class="pill">Open source</span>
+      </div>
+    </div>
+
   </div>
 </section>
 </div>
@@ -581,10 +604,72 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 
 <!-- SIDE PROJECTS -->
 <div class="container">
-<section class="section" id="projects" aria-label="Projects and side builds">
+<section class="section" id="projects">
   <div class="sec-tag">What I've been building</div>
-  <h2 class="sec-title">Things I built because I wanted to</h2>
+  <div class="sec-title">Things I built because I wanted to</div>
   <div class="sec-body">Each project started with a question that mattered to me as a product leader. The builds were the way to find the answer.</div>
+
+  <!-- Personal Assistant Toolkit -->
+  <div class="project-card featured">
+    <div class="pc-header">
+      <div class="pc-name">Personal Assistant Toolkit</div>
+      <div class="pc-badge shipped">LIVE · OPEN SOURCE · MIT</div>
+    </div>
+    <div class="pc-summary"><strong>The question:</strong> What if Claude already knew everything about your day without you having to tell it anything? Every morning starts with opening 6 to 8 apps just to understand what the day looks like. Calendar, tasks, reminders, email, weather. Each one is a context switch, and by the time you have the full picture, half an hour is gone.
+
+<br><br><strong>What I learned:</strong> The most important decision wasn't technical. It was the privacy architecture. All personal data stays on the user's machine. Nothing routes through a third-party server. That constraint shaped every tool choice (local MCP server, not cloud-hosted), every integration decision (metadata-only for Gmail, no email bodies), and every de-scoping call (Apple Notes and WhatsApp excluded because the privacy risk outweighed the value). Building the security layer before writing a single tool prevented the kind of retrofit that kills projects. And discovering that AppleScript silently hangs on large reminder lists, then pivoting to Swift/EventKit in the same session, reinforced something applicable to any product role: test assumptions with real data early, not after the demo.</div>
+
+    <div class="detail-grid">
+      <div class="detail-cell"><div class="dc-label">Tools built</div><div class="dc-val">7 MCP tools</div><div class="dc-note">Weather, Calendar, Tasks, Email, Reminders, Health check, Task completion</div></div>
+      <div class="detail-cell"><div class="dc-label">Daily time saved</div><div class="dc-val">20-30 min</div><div class="dc-note">One prompt replaces 6-8 app switches</div></div>
+      <div class="detail-cell"><div class="dc-label">Architecture</div><div class="dc-val">Local-first</div><div class="dc-note">All data stays on device, zero cloud routing</div></div>
+      <div class="detail-cell"><div class="dc-label">Status</div><div class="dc-val">Open source, MIT licensed</div><div class="dc-note">Built for public use, docs for devs and non-devs</div></div>
+    </div>
+
+    <div class="links-row">
+      <a href="https://github.com/anuraagburman/personal-assistant-toolkit" target="_blank" rel="noopener" class="link-btn" style="border-color:var(--acc);color:var(--acc)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        GitHub
+      </a>
+      <a href="#" class="link-btn" id="pat-prd-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+        Full PRD
+      </a>
+    </div>
+
+    <button class="expand-trigger" onclick="toggle('pat-decisions',this)">
+      <span class="arrow">&#9660;</span> Key product decisions
+    </button>
+    <div id="pat-decisions" class="expandable">
+      <div class="why-grid">
+        <div class="why-cell"><div class="wc-q">Why local-first, not cloud?</div><div class="wc-a">All personal data (calendar, email, reminders) stays on the user's machine. A hosted version would be easier to onboard but would require storing OAuth tokens server-side. For a tool handling sensitive personal data, that's a trust ask most users won't accept.</div></div>
+        <div class="why-cell"><div class="wc-q">Why MCP, not a standalone app?</div><div class="wc-a">Claude Desktop is already the interface. Building a separate dashboard would fragment attention and require a UI layer. MCP lets Claude reason about the data, not just display it. One conversation replaces six apps.</div></div>
+        <div class="why-cell"><div class="wc-q">Why de-scope Apple Notes and WhatsApp?</div><div class="wc-a">Notes are freeform and deeply personal. WhatsApp has strong user expectations around message privacy. Both carry more risk than value in Phase 1. This was a deliberate scope decision, documented before build started.</div></div>
+        <div class="why-cell"><div class="wc-q">Why multi-account Google from day one?</div><div class="wc-a">Most professionals have a personal and a work Gmail. Treating multi-account as Phase 2 would mean retrofitting the entire data model later. The server auto-discovers all authenticated accounts at runtime with no config changes needed.</div></div>
+        <div class="why-cell"><div class="wc-q">Why Swift/EventKit over AppleScript?</div><div class="wc-a">AppleScript's Reminders bridge silently hangs on large reminder lists. No error, no timeout. EventKit accesses the database directly via macOS framework, returns structured data reliably. The first approach failed in testing; the pivot happened in the same session.</div></div>
+        <div class="why-cell"><div class="wc-q">Why security-first build order?</div><div class="wc-a">Input validation (Zod schemas), rate limiting, and secure token storage were built before any tool was written. Retrofitting security into existing code is how vulnerabilities ship. Building it first meant every tool inherited the guardrails automatically.</div></div>
+      </div>
+    </div>
+
+    <button class="expand-trigger" onclick="toggle('pat-stack',this)">
+      <span class="arrow">&#9660;</span> Tech stack
+    </button>
+    <div id="pat-stack" class="expandable">
+      <div class="stack-row" style="margin-top:8px">
+        <span class="pill">TypeScript (strict)</span>
+        <span class="pill">Node.js 18+</span>
+        <span class="pill">MCP SDK</span>
+        <span class="pill">Google OAuth2</span>
+        <span class="pill">Google Calendar API</span>
+        <span class="pill">Google Tasks API</span>
+        <span class="pill">Gmail API</span>
+        <span class="pill">Open-Meteo</span>
+        <span class="pill">Swift / EventKit</span>
+        <span class="pill">Zod</span>
+        <span class="pill">Claude Desktop</span>
+      </div>
+    </div>
+  </div>
 
   <!-- PortfolioIQ -->
   <div class="project-card featured">
@@ -941,9 +1026,9 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 
 <!-- WHAT MAKES THIS DIFFERENT -->
 <div class="container">
-<section class="section" id="why" aria-label="What makes this different">
+<section class="section" id="why">
   <div class="sec-tag">Putting it together</div>
-  <h2 class="sec-title">Where strategy meets building</h2>
+  <div class="sec-title">Where strategy meets building</div>
 
   <div class="sec-body">Four industries, three countries, two companies co-founded, and one consistent pattern: an entrepreneurial mindset applied wherever the context demands it. Whether it was building a business from zero in India, navigating fintech regulation in Singapore, or aligning twelve regional teams around a single subscription strategy at Delivery Hero, the core skill is the same. Read the market, identify the highest-leverage problem, and move decisively toward a solution that scales.</div>
 
@@ -988,27 +1073,18 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 
 <!-- CONTACT -->
 <div class="container">
-<section class="section" id="contact" aria-label="Contact information">
+<section class="section" id="contact">
   <div class="closing-card">
-    <h2>Say hello.</h2>
+    <h3>Say hello.</h3>
     <p>I'm always happy to connect with people thinking about product strategy, AI-native development, or building at the intersection of product and engineering. If something here resonated, I'd welcome a conversation.</p>
     <div class="contact-row">
-      <a href="mailto:anuraagburman02@gmail.com" class="contact-btn primary">anuraagburman02@gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#5a3b342f283b3b3d382f28373b346a681a3d373b333674393537" class="contact-btn primary"><span class="__cf_email__" data-cfemail="25444b505744444247505748444b1517654248444c490b464a48">[email&#160;protected]</span></a>
       <a href="https://www.linkedin.com/in/anuraag-burman" target="_blank" rel="noopener" class="contact-btn secondary">LinkedIn</a>
       <a href="tel:+6582494979" class="contact-btn secondary">+65 8249 4979</a>
     </div>
   </div>
 </section>
 </div>
-
-<noscript>
-<style>.expandable{max-height:none !important;overflow:visible !important}.expand-trigger{display:none !important}</style>
-<div style="padding:12px 24px;background:#fff3cd;border:1px solid #ffc107;border-radius:8px;margin:0 auto 16px;max-width:760px;font-size:14px;color:#856404;text-align:center">
-  JavaScript is disabled. All expandable sections (earlier career, architecture, cost breakdown, tool decisions, and build process) are shown in full below.
-</div>
-</noscript>
-
-</main>
 
 <footer class="footer">
   <p>Anuraag Burman · Singapore · <a href="https://www.linkedin.com/in/anuraag-burman" target="_blank" rel="noopener">LinkedIn</a></p>
