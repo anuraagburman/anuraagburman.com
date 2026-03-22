@@ -185,6 +185,8 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 .nav{position:sticky;top:0;z-index:100;background:rgba(250,250,248,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--bdr);padding:0 2rem}
 .nav-inner{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:52px}
 .nav-name{font-family:var(--f-display);font-size:17px;font-weight:500;color:var(--ink);letter-spacing:-0.01em}
+.nav-name .full-name{display:inline}
+.nav-name .short-name{display:none}
 .nav-links{display:flex;gap:24px}
 .nav-links a{font-size:13px;font-weight:500;color:var(--ink3);text-decoration:none;letter-spacing:0.03em;transition:color 0.2s;white-space:nowrap}
 .nav-links a:hover{color:var(--ink)}
@@ -382,7 +384,7 @@ body{font-family:var(--f-body);color:var(--ink);background:var(--bg);line-height
 
 <nav class="nav" role="navigation" aria-label="Main navigation">
 <div class="nav-inner">
-  <a href="#" class="nav-name" style="text-decoration:none"><span class="full-name">Anuraag Burman</span><span class="short-name" style="display:none">AB</span></a>
+  <a href="#" class="nav-name" style="text-decoration:none"><span class="full-name">Anuraag Burman</span><span class="short-name">AB</span></a>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#role">Work</a>
